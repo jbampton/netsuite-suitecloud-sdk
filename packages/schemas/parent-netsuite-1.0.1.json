@@ -1,38 +1,188 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/parent-netsuite-1.0.1.json",
+  "$id": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/parent-netsuite-1.0.0.json",
   "title": "Parent schema definition",
   "description": "Parent schema definition",
   "type": "object",
   "oneOf": [
-
     {
       "type": "object",
       "properties": {
         "CustomField": {
           "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/custom-field-1.0.0.json#/properties/CustomField"
-        },
-        "$schema": {
-          "type": "string",
-          "description": "The schema to verify this document against."
         }
       },
-      "required": ["CustomField"],
+      "required": [
+        "CustomField"
+      ],
       "additionalProperties": false
     },
-
     {
       "type": "object",
       "properties": {
         "CustomRecord": {
           "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/custom-record-1.0.0.json#/properties/CustomRecord"
-        },
-        "$schema": {
-          "type": "string",
-          "description": "The schema to verify this document against."
         }
       },
-      "required": ["CustomRecord"],
+      "required": [
+        "CustomRecord"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "DatasetBuilderPlugin": {
+          "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/dataset-builder-plugin-1.0.0.json#/properties/DatasetBuilderPlugin"
+        }
+      },
+      "required": [
+        "DatasetBuilderPlugin"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "FiConnectivityPlugin": {
+          "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/fi-connectivity-plugin-1.0.0.json#/properties/FiConnectivityPlugin"
+        }
+      },
+      "required": [
+        "FiConnectivityPlugin"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "FiParserPlugin": {
+          "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/fi-parser-plugin-1.0.0.json#/properties/FiParserPlugin"
+        }
+      },
+      "required": [
+        "FiParserPlugin"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "Integration": {
+          "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/integration-1.0.0.json#/properties/Integration"
+        }
+      },
+      "required": [
+        "Integration"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "MapReduceDeployment": {
+          "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/map-reduce-deployment-1.0.0.json#/properties/MapReduceDeployment"
+        }
+      },
+      "required": [
+        "MapReduceDeployment"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "MapReduceScript": {
+          "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/map-reduce-script-1.0.0.json#/properties/MapReduceScript"
+        }
+      },
+      "required": [
+        "MapReduceScript"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "PermissionSet": {
+          "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/permission-set-1.0.0.json#/properties/PermissionSet"
+        }
+      },
+      "required": [
+        "PermissionSet"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "SdfInstallationDeployment": {
+          "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/sdf-installation-deployment-1.0.0.json#/properties/SdfInstallationDeployment"
+        }
+      },
+      "required": [
+        "SdfInstallationDeployment"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "SdfInstallationScript": {
+          "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/sdf-installation-script-1.0.0.json#/properties/SdfInstallationScript"
+        }
+      },
+      "required": [
+        "SdfInstallationScript"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "Secret": {
+          "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/secret-1.0.0.json#/properties/Secret"
+        }
+      },
+      "required": [
+        "Secret"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "SuiteCloudUiApp": {
+          "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/suitecloud-ui-app-1.0.0.json#/properties/SuiteCloudUiApp"
+        }
+      },
+      "required": [
+        "SuiteCloudUiApp"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "TaxCalculationPlugin": {
+          "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/tax-calculation-plugin-1.0.0.json#/properties/TaxCalculationPlugin"
+        }
+      },
+      "required": [
+        "TaxCalculationPlugin"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "WorkbookBuilderPlugin": {
+          "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/workbook-builder-plugin-1.0.0.json#/properties/WorkbookBuilderPlugin"
+        }
+      },
+      "required": [
+        "WorkbookBuilderPlugin"
+      ],
       "additionalProperties": false
     }
   ]
