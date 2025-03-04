@@ -12,9 +12,6 @@
           "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/custom-field-1.0.0.json#/properties/CustomField"
         }
       },
-      "required": [
-        "CustomField"
-      ],
       "additionalProperties": false
     },
     {
@@ -24,9 +21,6 @@
           "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/custom-record-1.0.0.json#/properties/CustomRecord"
         }
       },
-      "required": [
-        "CustomRecord"
-      ],
       "additionalProperties": false
     },
     {
@@ -36,9 +30,6 @@
           "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/dataset-builder-plugin-1.0.0.json#/properties/DatasetBuilderPlugin"
         }
       },
-      "required": [
-        "DatasetBuilderPlugin"
-      ],
       "additionalProperties": false
     },
     {
@@ -48,9 +39,6 @@
           "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/fi-connectivity-plugin-1.0.0.json#/properties/FiConnectivityPlugin"
         }
       },
-      "required": [
-        "FiConnectivityPlugin"
-      ],
       "additionalProperties": false
     },
     {
@@ -60,9 +48,6 @@
           "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/fi-parser-plugin-1.0.0.json#/properties/FiParserPlugin"
         }
       },
-      "required": [
-        "FiParserPlugin"
-      ],
       "additionalProperties": false
     },
     {
@@ -72,9 +57,6 @@
           "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/integration-1.0.0.json#/properties/Integration"
         }
       },
-      "required": [
-        "Integration"
-      ],
       "additionalProperties": false
     },
     {
@@ -84,9 +66,6 @@
           "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/map-reduce-deployment-1.0.0.json#/properties/MapReduceDeployment"
         }
       },
-      "required": [
-        "MapReduceDeployment"
-      ],
       "additionalProperties": false
     },
     {
@@ -96,9 +75,6 @@
           "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/map-reduce-script-1.0.0.json#/properties/MapReduceScript"
         }
       },
-      "required": [
-        "MapReduceScript"
-      ],
       "additionalProperties": false
     },
     {
@@ -108,9 +84,6 @@
           "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/permission-set-1.0.0.json#/properties/PermissionSet"
         }
       },
-      "required": [
-        "PermissionSet"
-      ],
       "additionalProperties": false
     },
     {
@@ -120,9 +93,6 @@
           "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/sdf-installation-deployment-1.0.0.json#/properties/SdfInstallationDeployment"
         }
       },
-      "required": [
-        "SdfInstallationDeployment"
-      ],
       "additionalProperties": false
     },
     {
@@ -132,9 +102,6 @@
           "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/sdf-installation-script-1.0.0.json#/properties/SdfInstallationScript"
         }
       },
-      "required": [
-        "SdfInstallationScript"
-      ],
       "additionalProperties": false
     },
     {
@@ -144,9 +111,6 @@
           "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/secret-1.0.0.json#/properties/Secret"
         }
       },
-      "required": [
-        "Secret"
-      ],
       "additionalProperties": false
     },
     {
@@ -156,9 +120,6 @@
           "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/suitecloud-ui-app-1.0.0.json#/properties/SuiteCloudUiApp"
         }
       },
-      "required": [
-        "SuiteCloudUiApp"
-      ],
       "additionalProperties": false
     },
     {
@@ -168,9 +129,6 @@
           "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/tax-calculation-plugin-1.0.0.json#/properties/TaxCalculationPlugin"
         }
       },
-      "required": [
-        "TaxCalculationPlugin"
-      ],
       "additionalProperties": false
     },
     {
@@ -180,9 +138,6 @@
           "$ref": "https://raw.githubusercontent.com/oracle/netsuite-suitecloud-sdk/refs/heads/feature/PDPDEVTOOL-6007-schemas_for_suitecloud_tools/packages/schemas/workbook-builder-plugin-1.0.0.json#/properties/WorkbookBuilderPlugin"
         }
       },
-      "required": [
-        "WorkbookBuilderPlugin"
-      ],
       "additionalProperties": false
     }
   ]
