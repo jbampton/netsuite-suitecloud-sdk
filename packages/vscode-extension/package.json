@@ -20,7 +20,7 @@
 		"directory": "packages/vscode-extension"
 	},
 	"engines": {
-		"vscode": "^1.96.0"
+		"vscode": "^1.92.0"
 	},
 	"categories": [
 		"Other"
@@ -184,7 +184,125 @@
 					"group": "suitecloud@1"
 				}
 			]
-		}
+		},
+		"breakpoints": [
+			{
+			  "language": "markdown"
+			},
+			{
+				"language": "javascript"
+			}
+		  ],
+		"debuggers": [
+			{
+			  "type": "mock",
+			  "languages": [
+				"markdown"
+			  ],
+			  "label": "Mock Debug",
+			  "program": "./out/debugger/debugAdapter.js",
+			  "runtime": "node",
+			  "configurationAttributes": {
+				"launch": {
+				  "required": [
+					"program"
+				  ],
+				  "properties": {
+					"program": {
+					  "type": "string",
+					  "description": "Absolute path to a text file.",
+					  "default": "${workspaceFolder}/${command:AskForProgramName}"
+					},
+					"stopOnEntry": {
+					  "type": "boolean",
+					  "description": "Automatically stop after launch.",
+					  "default": true
+					},
+					"trace": {
+					  "type": "boolean",
+					  "description": "Enable logging of the Debug Adapter Protocol.",
+					  "default": true
+					},
+					"compileError": {
+					  "type": "string",
+					  "description": "Simulates a compile error in 'launch' request.",
+					  "enum": [
+						"default",
+						"show",
+						"hide"
+					  ],
+					  "enumDescriptions": [
+						"default: show fake compile error to user",
+						"show fake compile error to user",
+						"do not show fake compile error to user"
+					  ]
+					}
+				  }
+				},
+				"attach": {
+				  "required": [
+					"program"
+				  ],
+				  "properties": {
+					"program": {
+					  "type": "string",
+					  "description": "Absolute path to a text file.",
+					  "default": "${workspaceFolder}/${command:AskForProgramName}"
+					},
+					"stopOnEntry": {
+					  "type": "boolean",
+					  "description": "Automatically stop after attach.",
+					  "default": true
+					},
+					"trace": {
+					  "type": "boolean",
+					  "description": "Enable logging of the Debug Adapter Protocol.",
+					  "default": true
+					},
+					"compileError": {
+					  "type": "string",
+					  "description": "Simulates a compile error in 'attach' request.",
+					  "enum": [
+						"default",
+						"show",
+						"hide"
+					  ],
+					  "enumDescriptions": [
+						"default: show fake compile error to user",
+						"show fake compile error to user",
+						"do not show fake compile error to user"
+					  ]
+					}
+				  }
+				}
+			  },
+			  "initialConfigurations": [
+				{
+				  "type": "mock",
+				  "request": "launch",
+				  "name": "Ask for file name",
+				  "program": "${workspaceFolder}/${command:AskForProgramName}",
+				  "stopOnEntry": true
+				}
+			  ],
+			  "configurationSnippets": [
+				{
+				  "label": "Mock Debug: Launch",
+				  "description": "A new configuration for 'debugging' a user selected markdown file.",
+				  "body": {
+					"type": "mock",
+					"request": "launch",
+					"name": "Ask for file name",
+					"program": "^\"\\${workspaceFolder}/\\${command:AskForProgramName}\"",
+					"stopOnEntry": true
+				  }
+				}
+			  ],
+			  "variables": {
+				"AskForProgramName": "extension.mock-debug.getProgramName"
+			  }
+			}
+		  ]		
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
@@ -192,7 +310,7 @@
 		"watch": "tsc -watch -p ./"
 	},
 	"dependencies": {
-		"@oracle/suitecloud-cli": "^3.1.0"
+		"@oracle/suitecloud-cli": "file:../node-cli"
 	},
 	"devDependencies": {
 		"@types/mocha": "10.0.10",
@@ -204,6 +322,10 @@
 		"eslint": "9.18.0",
 		"eslint-config-prettier": "10.0.1",
 		"mocha": "11.1.0",
-		"typescript": "5.7.3"
+		"typescript": "5.7.3",
+		"@vscode/debugadapter": "^1.56.0",
+		"@vscode/debugadapter-testsupport": "^1.56.0",
+		"await-notify": "^1.0.1",
+		"path-browserify": "^1.0.1"
 	}
 }
